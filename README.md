@@ -135,3 +135,100 @@ Get user input
 ENDIF
 END 
 
+Database for Customer-Company Relation (Done By Jose Clayton AND Marlven Bhunu Shava)
+CREATE TABLE Customers
+ (Customer_ID INT NOT NULL,
+First_name CHAR(25),
+Surname CHAR(50),
+Age INT,
+DOB DATETIME,
+PRIMARY KEY(Customer_ID) );
+Customer_ID	First_name	Surname	Age	DOB
+2576829	Catherine	Van Vyk	27	14/09/1995
+2647892	Stephen	Scheinder	40	08/02/1981
+
+
+
+INSERT INTO Customer
+(Customer_ID, First_name, Surname, Age, DOB,) VALUES
+ (2576829, ‘Catherine, ‘Van Vyk’, 27, ‘14/09/1995’),
+(2647892, ‘Stephen’, ‘Scheinder’, 40, ’08/02/1981’) );
+ 
+ 
+CREATE TABLE Customer Contact Details
+                   (Cellphone_no VARCHAR(15),
+                   Telephone_no VARCHAR(10),
+                   Email CHAR(25),
+                   P.O.BOX INT,
+                  FOREIGN KEY(Customer_ID) );        
+
+Customer Contact Details
+Cellphone_no	Telephone_no	Email	P.O.BOX	Customer_ID
+081-657-0000	061-5477	CVanWyk@yahoo.com
+14930	N2576829S
+081-456-7656	061-3768	StephSch@yahoo.com	14782	N2647892S
+INSERT INTO Customer Contact Details
+ (Cellphone_no, Telephone, Email, P.O.BOX) VALUES
+(081-657-0000, 061-5477, ‘CVanWyk@yahoo.com’, ‘P.O.BOX 25000’),
+(081-456-7656, 061-3768, ‘StephSch@yahoo.com’, ‘P.O.BOX 24076’) );
+
+ 
+CREATE TABLE Products
+        (Product_no INT PRIMARY KEY,
+        Product_name CHAR(80) 
+       Product_type CHAR(50)
+       Product_price FLOAT) );
+Products
+Product_no	Product_name	Product_type	Product_price
+S039989Q	Atlanta Shampoo	Hair Product 	40.50
+Q990038E	Everest Skin Moisturizer 	Cosmetics	68.90
+
+
+
+
+
+INSERT INTO Products 
+(Product_no, Product_name, Product_type, Product_price) VALUES
+(039989, ‘Atlanta Shampoo’, ‘Hair Product’, 40.50),
+(990038, ‘Everest Skin Moisturizer’, ‘Cosmetic’, 68.90 
+CREATE TABLE Customer Section
+         (Products_no INT
+         Comments CHAR(100),
+         Preferences CHAR(50),
+         Anniversary_date DATE,
+         DOB DATE,    
+         FOREIGN KEY(CUSTOMER_ID) 
+         REALTIONAL KEY (Products_no) );
+Comment Section
+Customer_ID	Product_no	Comments	Preferences
+2576829	039989	Very good product. Takes the cup for me.	Should remain exactly as it is
+2647892	990038	Poorly labelled and advertised. Far from satisfactory.	Would love it to have a greater smoothening effect.
+INSERT INTO Customer Section
+(Customer_ID, Products_no, Comments, Preferences,) VALUES
+(2576829, 039989, ‘Very good product. Takes the cup for me’ ,’ Should remain exactly as it is’),
+(2647892, 990038, ‘Poorly labelled and advertised. Far from satisfactory’, ‘Would love it to have a greater smoothening effect’)
+
+
+ 
+Table for Employee Management 
+CREATE TABLE Employee
+     (Employee_ID INT NO¬¬T NULL	
+      First_name CHAR(50)
+      SURNAME CHAR(50)
+      Department CHAR(50)
+      Postion CHAR(50)
+      Attendance CHAR(15)
+Employee
+Employee_ID	Frist_name	Surname	Department	Position
+7689076	Maxine	Phoeman	Sales and Marketing 	Head Sales Clerk
+3456754	Sydney 	Matheaus	Research and Testing 	Senior Lab Researcher 
+INSERT INTO Emloyee
+(Employee_ID,First_name,Surname,Department,Position,) VALUES
+(7689076, ’Maxine’, ’Phoeman’, ’Sales’, ’Head Sales Clerk’,)
+(3456754, ’Sydney’, ’Matheaus’,’Research and Testing’ ,’Senior Lab Researcher’) );
+
+
+
+
+
+
