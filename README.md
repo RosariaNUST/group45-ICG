@@ -228,6 +228,22 @@ INSERT INTO Emloyee
 (3456754, ’Sydney’, ’Matheaus’,’Research and Testing’ ,’Senior Lab Researcher’) );
 
 
+Modules:
+SignUp module: This module allows for a user to be able to create an account and set a password to it
+Login Module: This module allows a user to login into their account by enteing their username and password, provided they have already completed the signUp module.
+Login History: This module keeps track of the Login history. It can only be viewed by the admin. It provides employee and customer
+login time and logout time. Through this the admin knows who frequently has been on the site.
+Cart module: This module shows the items that have been added to the cart before the customer proceeds to checkout. It also shows an order summary and allows for the user to add or remove items from the list.
+Gift card module: This module can be used on a checkout page to redeem a gift card as tender.
+Payment module: This module lets customers pay for orders by using credit cards or debit cards.
+Checkout module: This module captures the shipping address, shipping method and billing information. It is required to succesfully make an order.
+Logout module: This module allows a user to safely signout of the page without them leaving their profile exposed to foreign entities.
+Customers Account module: This modules keeps track of user orders and history so that Re-orders, user address, Product reviews and customer contact detatils are easily accesible to admin on site.
+Catalog management module: This module allows to keep track of item quantities and provides specific information and characteristics of items in catalog, It also allows for easy search of items.
+
+
+
+
 
 
 
